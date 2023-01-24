@@ -1,0 +1,41 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --basilisk-primary: #445b2f;
+    --basilisk-accent-one: #83b05b;
+    --basilisk-accent-two: #2f5b4f;
+    --basilisk-black: #040603;
+    --basilisk-white: #ecefea;
+    font-size: 16px;
+}
+
+body {
+    background: var(--basilisk-white);
+    height: 100vh;
+    display: grid;
+    grid-template: minmax(250px, 1fr) 4fr / 1fr 6fr;
+    gap: 1rem;
+}
+
+nav {
+    grid-area: 1 / 1 / 3/ 2;
+    background-color: var(--basilisk-primary);
+    border-radius: 1rem;
+    margin: 1rem 0rem 1rem 1rem;
+    min-width: 250px;
+}
+
+.top-bar {
+    background-color: var(--basilisk-black);
+    border-radius: 1rem;
+    margin: 1rem 1rem 0 0;
+}
+
+.content {
+    background-color: var(--basilisk-black);
+    border-radius: 1rem;
+    margin: 0 1rem 1rem 0;
+}
