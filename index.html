@@ -4,8 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basilisk Admin Dashboard</title>
     <link rel="stylesheet" href="./css/global.css">
-    <title>Basilisk</title>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script src="./scripts/main.js" defer></script>
 </head>
 <body>
     <nav>
@@ -15,23 +17,46 @@
         </div>
         <div class="nav-bar part-one">
             <ul>
-                <li>Home</li>
-                <li>Profile</li>
-                <li>Messages</li>
-                <li>History</li>
-                <li>Tasks</li>
-                <li>Community</li>
+                <li><i data-feather="home"></i> Home</li>
+                <li><i data-feather="user"></i> Profile</li>
+                <li><i data-feather="message-square"></i> Messages</li>
+                <li><i data-feather="archive"></i> History</li>
+                <li><i data-feather="check-square"></i> Tasks</li>
+                <li><i data-feather="users"></i> Community</li>
             </ul>
         </div>
         <div class="nav-bar part-two">
             <ul>
-                <li>Settings</li>
-                <li>Support</li>
-                <li>Privacy</li>
+                <li><i data-feather="settings"></i> Settings</li>
+                <li><i data-feather="life-buoy"></i> Support</li>
+                <li><i data-feather="shield"></i> Privacy</li>
             </ul>
         </div>
     </nav>
-    <div class="top-bar"></div>
+    <div class="top-bar">
+        <div class="search-wrapper">
+            <i data-feather="search"></i>
+            <input type="search">
+        </div>
+        <div class="profile-wrapper">
+            <i data-feather="bell"></i>
+            <div class="profile-pic"></div>
+            <span class="user-full-name">John Darksouls</span>
+        </div>
+        <div class="greeting-wrapper">
+            <div class="profile-pic"></div>
+            <div class="user-greeting">
+                <div class="hello-greeting">Hello There,</div>
+                <span class="user-full-name">John Darksouls</span>
+                <div class="username">(@chosen.undead)</div>
+            </div>
+        </div>
+        <div class="controls-wrapper">
+            <div class="new button">New</div>
+            <div class="upload button">Upload</div>
+            <div class="share button">Share</div>
+        </div>
+    </div>
     <div class="content"></div>
 </body>
 </html>
